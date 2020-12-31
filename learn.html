@@ -10,6 +10,8 @@
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    <!-- Pasted from STACKOVERFLOW-->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet"
@@ -20,41 +22,14 @@
 </head>
 
 <body id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/img/navbar-logo.svg"
-                    alt="" /></a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars ml-1"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav text-uppercase ml-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            About
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item js-scroll-trigger" href="#services">Services</a>
-                            <a class="dropdown-item js-scroll-trigger" href="#portfolio">Hardwares</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item js-scroll-trigger" href="#team">Team</a>
-                            <a class="dropdown-item js-scroll-trigger" href="#contact">Contact</a>
-                        </div>
-                    </li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html #Projects">Projects</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="downloads.html">Downloads</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-
+    <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("nav.html");
+        });
+    </script>
+    <!--end of Navigation bar-->
     <!-- Services-->
     <section class="page-section" id="downloads">
         <div class="container">
