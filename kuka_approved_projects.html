@@ -37,10 +37,25 @@
     <!-- Main-->
     <section class="page-section" id="kuka_robot_qualification">
 
-        <div class="container">
+        <div class="container text-center my-4">
+            <h2>Current Kuka KR-300 Registered Project</h2>
+            <p class="font-weight-bold">The data in the table comes from the google spreadsheet</p>
+
+            <a class="btn btn-primary mb-4"
+                href="https://docs.google.com/spreadsheets/d/1UolxekFFCr8YnBlK-SnSpZMVvfSUlcGz6Hk7zr-agwc/edit?usp=sharing"
+                role="button" target="_blank">View the source sheet</a>
+            <div id="table-placeholder">Loading from Google sheet</div>
+            <!-- Table  -->
             <script>
-                loadRemoteMDtoHtml("md/policies/space.md");
+                $.get("https://docs.google.com/spreadsheets/d/1UolxekFFCr8YnBlK-SnSpZMVvfSUlcGz6Hk7zr-agwc/gviz/tq?tqx=out:html&tq&gid=0 body", function (data) {
+                    $("#table-placeholder").replaceWith(data);
+                    $("#table-placeholder").removeAttr('style');
+                });
+                $('table').removeAttr('style');
+                $('tr').removeAttr('style');
             </script>
+            <script>$('table').removeAttr('style');</script>
+            <!-- Table  -->
 
         </div>
     </section>
