@@ -49,12 +49,8 @@
             <script>
                 $.get("https://docs.google.com/spreadsheets/d/1UolxekFFCr8YnBlK-SnSpZMVvfSUlcGz6Hk7zr-agwc/gviz/tq?tqx=out:html&tq&gid=0 body", function (data) {
                     $("#table-placeholder").replaceWith(data);
-                    $("#table-placeholder").removeAttr('style');
                 });
-                $('table').removeAttr('style');
-                $('tr').removeAttr('style');
             </script>
-            <script>$('table').removeAttr('style');</script>
             <!-- Table  -->
 
         </div>
